@@ -66,6 +66,8 @@ def extract_keywords(temp: float, desc: str) -> list:
         tags.append("cold")
 
     desc = desc.lower()
+    tags.append(desc)  
+
     if "cloud" in desc:
         tags.append("cloudy")
     if "rain" in desc or "drizzle" in desc:
